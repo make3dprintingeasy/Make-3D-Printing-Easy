@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D-Drucker Komponenten & Funktionsweise</title>
+  <link rel="stylesheet" href="style/index_style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="menu">
+      <a href="index.html">Startseite</a>
+      <a href="3d_Printer_buy_recomendation.html">3D-Drucker Kaufempfehlung</a>
+      <a href="What_is_important_for_3d_printing.html">Tipps & Fehler</a>
+      <a href="3d_Slicing_software.html">Slicing Software</a>
+      <a href="Speedprofile_for_your_printer.html">High-Speed Profile</a>
+      <a href="3d_Modeling.html">3D-Konstruktion & 3D-Modelling</a>
+    </nav>
+
+    <h1>Die wichtigsten Komponenten eines 3D-Druckers erklärt</h1>
+    <p>Hier erfährst du, aus welchen Teilen ein 3D-Drucker besteht, wie sie zusammenarbeiten und welche Funktion sie im Druckprozess übernehmen.</p>
+  </header>
+
+  <main>
+
+    <section class="grid large-cards-grid">
+
+        <!-- 1. Klassischer / Cartesian-Drucker -->
+        <div class="card large-card">
+        <div class="icon">📐</div>
+        <h2>Klassischer-Drucker</h2>
+        <img src="images/Classic_3D_Printer.jpg" alt="Klassischer 3D-Drucker" />
+        <p>Der klassische 3D-Drucker bewegt den Druckkopf auf zwei Achsen, während das Druckbett auf der dritten Achse bewegt wird, um Schicht für Schicht aufzubauen.</p>
+        <h3>Funktionsweise:</h3>
+        <ul>
+            <li>Der Druckkopf bewegt sich horizontal (X-Achse) und vertikal (Z-Achse).</li>
+            <li>Das Druckbett bewegt sich nach Vorne und Hinten (Y-Achse), sodass neue Layer korrekt aufgetragen werden.</li>
+            <li>Linearschienen oder Stahlstangen sorgen für präzise und stabile Bewegungen.</li>
+        </ul>
+        <h3>Vorteile:</h3>
+        <ul>
+            <li>Einfaches Design, leicht zu warten</li>
+            <li>Hohe Zuverlässigkeit</li>
+            <li>Kostengünstig</li>
+        </ul>
+        <h3>Nachteile:</h3>
+        <ul>
+            <li>Moderate Druckgeschwindigkeit</li>
+            <li>Höhere bewegte Masse auf dem Druckkopf kann zu Vibrationen führen</li>
+            <li>Der Ducker muss das Druckbett schwere Druckbett schnell bewegen. Dies ist das Hauptproblem warum diese Drucker-Art nur so langsam arbeiten kann.</li>
+        </ul>
+        <h3>Typische Anwendung:</h3>
+        <p>Ideal für Einsteiger und präzise Drucke im mittleren Geschwindigkeitsbereich.</p>
+        </div>
+
+        <!-- 2. CoreXY-Drucker -->
+        <div class="card large-card">
+        <div class="icon">⚡</div>
+        <h2>CoreXY-Drucker</h2>
+        <img src="images/CoreXY.png" alt="CoreXY 3D-Drucker" />
+        <p>Bei CoreXY-Druckern bewegt sich der Extruder über ein gekreuztes Riemensystem horizontal in X- und Y-Richtung. Das Druckbett bewegt sich nur vertikal auf der Z-Achse.</p>
+        <h3>Funktionsweise:</h3>
+        <ul>
+            <li>Die X- und Y-Bewegungen werden über zwei bis vier Motoren und gekreuzte Riemen gesteuert.</li>
+            <li>Das Druckbett bewegt sich vertikal auf der Z-Achse für neue Layer.</li>
+            <li>Die Konstruktion ermöglicht hohe Beschleunigung bei geringem Gewicht des bewegten Extruders.</li>
+        </ul>
+        <h3>Vorteile:</h3>
+        <ul>
+            <li>Sehr schnelle Druckgeschwindigkeiten</li>
+            <li>Hohe Präzision bei komplexen Geometrien</li>
+            <li>Stabile Druckergebnisse bei großen Bauteilen</li>
+            <li>Bei einer Druckorientierung von 45° werden nur ein oder zwei Motoren voll ausgelastet</li>
+        </ul>
+        <h3>Nachteile:</h3>
+        <ul>
+            <li>Komplexere Mechanik, aufwendiger in Wartung</li>
+            <li>Riemenspannung kritisch für Präzision</li>
+            <li>Zu den kann es passieren, dass die Riemen-Strucktur in den Wänden sichtbar werden.</li>
+        </ul>
+        <h3>Typische Anwendung:</h3>
+        <p>Geeignet für semi-professionelle Anwender, schnelle Prototypen und präzise technische Teile bei extremer Geschwindigkeit.</p>
+        </div>
+
+        <!-- 3. Delta-Drucker -->
+        <div class="card large-card">
+        <div class="icon">🔺</div>
+        <h2>Delta-Drucker</h2>
+        <img src="images/Gemini_Delta_Printer.png" alt="Delta 3D-Drucker" />
+        <p>Delta-Drucker besitzen drei senkrechte Säulen, an denen Arme befestigt sind, die den Extruder über Kugelgelenke bewegen. Das Druckbett bleibt stationär.</p>
+        <h3>Funktionsweise:</h3>
+        <ul>
+            <li>Drei parallele Säulen steuern den Extruder durch diagonale Arme.</li>
+            <li>Bewegung erfolgt über gleichzeitige Anpassung aller drei Arme.</li>
+            <li>Druckbett bleibt fix, nur der Extruder bewegt sich frei im Raum.</li>
+        </ul>
+        <h3>Vorteile:</h3>
+        <ul>
+            <li>Sehr hohe Druckgeschwindigkeit</li>
+            <li>Extreme Beschleunigungsraten möglich</li>
+            <li>Hohe Druckhöhe möglich</li>
+            <li>Elegantes, platzsparendes Design</li>
+        </ul>
+        <h3>Nachteile:</h3>
+        <ul>
+            <li>Komplexe Kalibrierung</li>
+            <li>Etwas schwieriger zu warten</li>
+            <li>Geringere Präzision bei sehr kleinen Details</li>
+        </ul>
+        <h3>Typische Anwendung:</h3>
+        <p>Ideal für schnelle, hohe Drucke oder spezielle Formen wie Figuren, Lampen oder architektonische Modelle.</p>
+        </div>
+
+        <!-- Generelle Komponeten -->
+
+        <!-- 1. Extruder & Hotend -->
+        <div class="card large-card">
+            <div class="icon">🔥</div>
+            <h2>Extruder & Hotend</h2>
+            <img src="images/Gemini_Hotend.png" alt="3D-Drucker Extruder" />
+            <p>Der Extruder zieht das Filament ein und das Hotend erhitzt es auf die gewünschte Drucktemperatur, um es präzise abzulagern.</p>
+            <ul>
+            <li>Ein Direktantrieb-Extruder sitzt direkt am Hotend und drückt das Filament unmittelbar in die Düse, was präzises Drucken von flexiblen Filamenten erleichtert, während ein Bowden-Extruder das Filament über ein langes Rohr (Bowden-Tube) zum Hotend führt, was die bewegte Masse am Druckkopf reduziert und höhere Druckgeschwindigkeiten ermöglicht, zudem bei flexiblen Materialien schwieriger zu kontrollieren ist.</li>
+            <li>Temperaturen: 200-400°C je nach Material</li>
+            <li>Düsen: Standard 0,2 - 0,8 mm, austauschbar. Wichtig ist zubeachten ist, dass jede Marke gern ihre eigenen Düsen verwenden!</li>
+            </ul>
+        </div>
+
+        <!--2. Bauplattform / Druckbett -->
+        <div class="card large-card">
+            <div class="icon">📏</div>
+            <h2>Druckbett & Bauplattform</h2>
+            <img src="images/Druckplatte.jpg" alt="3D-Drucker Druckbett" />
+            <p>Das Druckbett sorgt für Haftung des ersten Layers und ist beheizt meist bis 120°C.</p>
+            <ul>
+            <li>Beheizt: PLA, ABS, PETG, Nylon, PP</li>
+            <li>Materialien: Glas, Aluminium mit einer Federstahlblatte, welcher Glatt oder Gekörnt sein kann.</li>
+            <li>Kalibrierung: Manuell oder automatisch</li>
+            </ul>
+        </div>
+
+        <!-- 3. Antriebssysteme -->
+        <div class="card large-card">
+            <div class="icon">⚙️</div>
+            <h2>Antriebe & Motoren</h2>
+            <img src="images/Steppermotor.jpg" alt="Schrittmotoren 3D-Drucker" />
+            <p>Schrittmotoren bewegen die Achsen präzise und sorgen für korrekte Positionierung des Extruders.</p>
+            <ul>
+            <li>Schrittmotoren für X-, Y-, Z-Achsen</li>
+            <li>Riemen- oder Gewindetrieb</li>
+            <li>Linearführungen für hohe Präzision</li>
+            </ul>
+        </div>
+
+        <!-- 4. Elektronik & Steuerung -->
+        <div class="card large-card">
+            <div class="icon">💻</div>
+            <h2>Elektronik & Steuerung</h2>
+            <img src="images/Motherboard.jpg" alt="3D-Drucker Steuerung" />
+            <p>Steuerplatine, Netzteil und Sensoren koordinieren Druckbewegungen, Temperaturregelung und Sicherheit.</p>
+            <ul>
+            <li>Das Kontrollboard ist das Gehirn des 3D-Druckers: Es steuert Motoren, Heizungen, Sensoren und Lüfter, verarbeitet die G-Code-Befehle und sorgt dafür, dass jede Bewegung und Temperatur exakt zum richtigen Zeitpunkt ausgeführt wird</li>
+            <li>Firmware: Meist Klipper</li>
+            <li>Sensoren: Endstops, Filamentsensoren, Temperatursensoren</li>
+            </ul>
+        </div>
+
+        <!-- 5. Kühlung -->
+        <div class="card large-card">
+            <div class="icon">❄️</div>
+            <h2>Kühlung</h2>
+            <img src="images/Kühlung.jpg" alt="3D-Drucker Lüfter" />
+            <p>Kühlung ist entscheidend für die Druckqualität. Hotend- und Bauteilkühlung verhindern Verformungen.</p>
+            <ul>
+            <li>Hotend-Lüfter: Kühlung der Düse</li>
+            <li>Bauteilkühler: Fächerlüfter für Layer-Festigkeit</li>
+            <li>Gehäuselüfter: Temperaturkontrolle bei technischen Filamenten</li>
+            </ul>
+            <ul>
+            <li>Wichtig zu wissen ist das die Temperatur der Bauteilkühlenden Luft nicht so entscheidend ist wie die Menge anluft mit der gekühlt wird.</li>    
+            </ul>
+        </div>
+
+        <!-- 6. Software & Schnittstellen -->
+        <div class="card large-card">
+            <div class="icon">💾</div>
+            <h2>Software & Schnittstellen</h2>
+            <img src="images/Entwicklung.jpg" alt="3D-Drucker Software" />
+            <p>G-Code-Erzeugung, Slicer-Software und Bedienoberflächen ermöglichen das Drucken von 3D-Modellen.</p>
+            <ul>
+            <li>Slicer: PrusaSlicer, OrcaSlicer oder auch der Hauseigene Slicer des Herstellers</li>
+            <li>Verbindung: USB, SD-Karte, WLAN</li>
+            <li>Touchscreens & Fernsteuerung via App oder per Slicer</li>
+            </ul>
+        </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Make 3D Printing Easy
+    <br>Letztes Update 1.02.2026<br>
+    Kontakt
+    <br>E-mail: make3dprintingeasy@outlook.com<br>
+    <a class="cta" href="Impressum.html">Impressum</a>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slicing Software - Creality Print</title>
+  <link rel="stylesheet" href="style/index_style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="menu">
+      <a href="index.html">Startseite</a>
+      <a href="3d_Printer_buy_recomendation.html">3D-Drucker Kaufempfehlung</a>
+      <a href="What_is_important_for_3d_printing.html">Tipps & Fehler</a>
+      <a href="Speedprofile_for_your_printer.html">High-Speed Profile</a>
+      <a href="3d_Modeling.html">3D-Konstruktion & 3D-Modelling</a>
+      <a href="How_does_a_3d_Printer_works.html">3D-Drucker Komponenten & Funktionsweise</a>
+    </nav>
+
+    <h1>Slicing Software - Creality Print</h1>
+    <p>
+      Ohne einen Slicer kann kein 3D-Drucker arbeiten.  
+      Auf dieser Seite erklären wir dir, was ein Slicer überhaupt macht, warum
+      Creality Print gerade für Einsteiger sinnvoll ist und worauf du achten solltest,
+      damit deine Drucke von Anfang an funktionieren.
+    </p>
+  </header>
+
+  <main>
+
+    <h1>Was ist ein Slicer?</h1>
+
+    <section class="grid large-cards-grid">
+
+      <div class="card large-card">
+        <div class="icon">✂️</div>
+        <h2>Was macht ein Slicer?</h2>
+        <p>
+          Eine Slicing-Software wandelt ein 3D-Modell in Befehle um, die der Drucker versteht.
+          Dabei wird das Modell in viele einzelne Schichten zerlegt.
+        </p>
+        <ul>
+          <li>Umwandlung von STL/3MF zu G-Code (das ist der Code, den dein Drucker versteht)</li>
+          <li>Berechnung von Schichten, Wänden und Infill</li>
+          <li>Steuerung von Geschwindigkeit und Temperaturen</li>
+          <li>Erzeugung von Stützstrukturen</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">🧠</div>
+        <h2>Warum Creality Print?</h2>
+        <p>
+          In unserem Beispiel nutzen wir Creality Print.
+          Am besten ist es jedoch immer, die Software deines Druckerherstellers zu verwenden.
+        </p>
+        <ul>
+          <li>Fertige Profile für viele Creality-Drucker</li>
+          <li>Einfache und übersichtliche Oberfläche</li>
+          <li>Kaum Vorkenntnisse notwendig</li>
+          <li>Kostenlos nutzbar</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">📁</div>
+        <h2>Unterstützte Dateiformate</h2>
+        <ul>
+          <li><strong>STL:</strong> Klassiker im 3D-Druck, sehr weit verbreitet</li>
+          <li><strong>3MF:</strong> Modernes Format mit Druckeinstellungen</li>
+          <li><strong>OBJ:</strong> Häufig bei 3D-Modelling-Software</li>
+          <li><strong>AMF:</strong> Erweitert STL um Material- und Farbinformationen</li>
+          <li><strong>STEP / STP:</strong> CAD-Format mit exakten Geometriedaten</li>
+          <li><strong>IGES / IGS:</strong> Älteres CAD-Austauschformat</li>
+        </ul>
+
+        <p>
+          <strong>Empfehlung:</strong><br>
+          Verwende <strong>3MF</strong>, da hier neben dem Modell auch Skalierung,
+          Ausrichtung und viele Slicer-Einstellungen gespeichert werden können.
+        </p>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">⚙️</div>
+        <h2>Wichtige Einstellungen für Anfänger</h2>
+        <ul>
+          <li><strong>Schichthöhe:</strong> 0,2 mm (guter Standard)</li>
+          <li><strong>Infill:</strong> 10-20% für normale Teile</li>
+          <li><strong>Drucktemperatur:</strong> Laut Filament-Hersteller</li>
+          <li><strong>Druckgeschwindigkeit:</strong> Lieber langsamer starten</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">🪜</div>
+        <h2>Stützstrukturen</h2>
+        <p>
+          Überhänge können nicht immer frei gedruckt werden.
+          Hier kommen Stützstrukturen ins Spiel.
+        </p>
+        <ul>
+          <li>Automatische Generierung möglich</li>
+          <li>Baumstrukturen für einfaches Entfernen</li>
+          <li>Nur dort platzieren, wo nötig, oder die automatische Generierung nutzen</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">⚠️</div>
+        <h2>Häufige Fehler beim Slicen</h2>
+        <ul>
+          <li>Falsches Druckerprofil ausgewählt</li>
+          <li>Zu hohe Druckgeschwindigkeit</li>
+          <li>Falsche Temperatur für das Filament</li>
+          <li>Stützstrukturen vergessen</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <h1>Wichtige Slicer-Einstellungen</h1>
+    <h3>Diese Einstellungen kannst du ändern, ohne deinen Druck direkt zu ruinieren.</h3>
+
+    <section class="grid large-cards-grid">
+
+      <div class="card large-card">
+        <div class="icon">📏</div>
+        <h2>Schichthöhe</h2>
+        <p>
+          Die Schichthöhe bestimmt, wie fein oder grob dein Druck wird.
+          Sie ist eine der sichersten Einstellungen, die du anpassen kannst.
+        </p>
+        <ul>
+          <li><strong>0,24 mm:</strong> Schneller Druck, geringere Details</li>
+          <li><strong>0,20 mm:</strong> Guter Standard für fast alles</li>
+          <li><strong>0,08-0,16 mm:</strong> Hohe Detailqualität, längere Druckzeit</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">⚡</div>
+        <h2>Druckgeschwindigkeit</h2>
+        <p>
+          Die Druckgeschwindigkeit beeinflusst Qualität, Lautstärke
+          und die Wahrscheinlichkeit von Fehlern.
+        </p>
+        <ul>
+          <li><strong>Langsam (40-60 mm/s):</strong> Sehr zuverlässig</li>
+          <li><strong>Standard (80-120 mm/s):</strong> Gute Balance</li>
+          <li><strong>Schnell (300+ mm/s):</strong> Nur mit gutem Drucker</li>
+        </ul>
+        <p>
+          Tipp: Wenn ein Druck fehlschlägt, reduziere zuerst die Geschwindigkeit.
+        </p>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">🧱</div>
+        <h2>Wandstärke / Perimeter</h2>
+        <p>
+          Die Wandstärke bestimmt, wie stabil dein Bauteil wird.
+        </p>
+        <ul>
+          <li><strong>2 Linien:</strong> Für Deko und einfache Teile</li>
+          <li><strong>3 Linien:</strong> Guter Standard</li>
+          <li><strong>4+ Linien:</strong> Sehr stabil, längere Druckzeit</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">🕸️</div>
+        <h2>Infill (Fülldichte)</h2>
+        <p>
+          Der Infill ist die innere Struktur des Modells.
+          Mehr Infill bedeutet nicht automatisch mehr Stabilität.
+        </p>
+        <ul>
+          <li><strong>5-15%:</strong> Deko, große Modelle</li>
+          <li><strong>20%:</strong> Sehr guter Allround-Wert</li>
+          <li><strong>30-40%:</strong> Funktionale Teile</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">🔥</div>
+        <h2>Drucktemperatur</h2>
+        <p>
+          Die Temperatur sollte immer im Bereich der Herstellerangaben liegen.
+          Kleine Anpassungen sind problemlos möglich.
+        </p>
+        <ul>
+          <li><strong>Zu kalt:</strong> Schlechte Layerhaftung</li>
+          <li><strong>Optimal:</strong> Saubere Oberflächen</li>
+          <li><strong>Zu heiß:</strong> Stringing und unsaubere Details</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">🌀</div>
+        <h2>Bauteilkühlung</h2>
+        <p>
+          Die Lüfterkühlung beeinflusst Überhänge und Details.
+        </p>
+        <ul>
+          <li><strong>PLA:</strong> 80-100% Lüfter</li>
+          <li><strong>PETG:</strong> 30-70% Lüfter</li>
+          <li><strong>ABS und technische Materialien:</strong> Lüfter meist aus oder sehr niedrig (ca. 20%)</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <h1>Ein perfektes Druckprofil erstellen</h1>
+    <h3>So erstellst du Schritt für Schritt ein zuverlässiges Profil für deinen Drucker.</h3>
+
+    <section class="grid large-cards-grid">
+
+      <div class="card large-card">
+        <div class="icon">📋</div>
+        <h2>Mit einem Basisprofil starten</h2>
+        <p>
+          Beginne immer mit einem fertigen Profil des Herstellers.
+          Diese Profile sind meist konservativ, aber zuverlässig.
+        </p>
+        <ul>
+          <li>Richtigen Drucker auswählen</li>
+          <li>Passendes Filamentprofil nutzen</li>
+          <li>Nicht alles auf einmal ändern</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">🧱</div>
+        <h2>Wandstärke / Perimeter</h2>
+        <ul>
+          <li>2 Linien: Deko oder einfache Teile</li>
+          <li>3 Linien: Guter Allround-Wert</li>
+          <li>4+ Linien: Sehr stabil für funktionale Teile</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">🌡️</div>
+        <h2>Temperatur abstimmen</h2>
+        <ul>
+          <li>Temperatur-Testdruck durchführen</li>
+          <li>In 5°C Schritten anpassen</li>
+          <li>Auf Oberfläche und Layerhaftung achten</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">⚡</div>
+        <h2>Geschwindigkeit und Jerk optimieren</h2>
+        <ul>
+          <li>Langsam starten, dann steigern</li>
+          <li>Außenwände langsamer drucken</li>
+          <li>Jerk nicht zu hoch einstellen</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">🧵</div>
+        <h2>Retraktion und Bewegungen</h2>
+        <ul>
+          <li>Retraktionslänge nicht übertreiben</li>
+          <li>Retraktionsgeschwindigkeit moderat halten</li>
+          <li>Combing aktivieren</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">🪜</div>
+        <h2>Stützstrukturen</h2>
+        <ul>
+          <li>Nur dort platzieren, wo nötig</li>
+          <li>Baumstrukturen für leichtes Entfernen</li>
+          <li>Stützdichte anpassen</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">🔲</div>
+        <h2>Brim und Skirt verwenden</h2>
+        <ul>
+          <li>Skirt: Prüft den Filamentfluss</li>
+          <li>Brim: Vergrößert die Haftfläche</li>
+          <li>Besonders hilfreich bei ABS und PETG</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">🧪</div>
+        <h2>Mit Testdrucken arbeiten</h2>
+        <ul>
+          <li>Temperatur-Tower</li>
+          <li>Retraktions-Test</li>
+          <li>Überhang- und Brücken-Test</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">💾</div>
+        <h2>Profil speichern und benennen</h2>
+        <ul>
+          <li>Filament und Düse im Namen angeben</li>
+          <li>Änderungen dokumentieren</li>
+          <li>Lieber mehrere Profile als eins für alles</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <h1>Creality Print Download</h1>
+    <h3>
+      Lade die Software immer direkt vom Hersteller herunter.
+      <a class="cta" target="_blank" href="https://www.creality.com/download#sparkx">Creality Print herunterladen →</a>
+    </h3>
+
+  </main>
+
+  <footer>
+    Make 3D Printing Easy<br>
+    Letztes Update 01.02.2026<br>
+    Kontakt<br>
+    E-Mail: make3dprintingeasy@outlook.com<br>
+    <a class="cta" href="Impressum.html">Impressum</a>
+  </footer>
+
+</body>
+</html>

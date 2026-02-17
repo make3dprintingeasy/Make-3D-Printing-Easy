@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>High-Speed 3D-Druckprofil</title>
+  <link rel="stylesheet" href="style/index_style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="menu">
+      <a href="index.html">Startseite</a>
+      <a href="3d_Printer_buy_recomendation.html">3D-Drucker Kaufempfehlung</a>
+      <a href="What_is_important_for_3d_printing.html">Tipps & Fehler</a>
+      <a href="3d_Slicing_software.html">Slicing Software</a>
+      <a href="3d_Modeling.html">3D-Konstruktion & 3D-Modelling</a>
+      <a href="How_does_a_3d_Printer_works.html">3D-Drucker Komponenten & Funktionsweise</a>
+    </nav>
+
+    <h1>High-Speed 3D-Druck: So geht's richtig</h1>
+    <p>
+      In diesem Abschnitt lernst du Schritt für Schritt, wie du deinen FDM-Drucker für schnelle und dennoch qualitativ hochwertige Drucke optimierst.
+      Ich erkläre, welche Einstellungen wirklich wichtig sind, was man beachten muss und welche kleinen Tricks die großen Unterschiede machen.
+    </p>
+  </header>
+
+  <main>
+    <section class="grid large-cards-grid">
+        <!-- Karte 1: Was ist ein Speedprofil -->
+        <div class="card large-card">
+            <div class="icon">⚡</div>
+            <h2>Was ist ein High-Speed-Profil?</h2>
+            <p>
+            Ein High-Speed-Profil ist ein spezielles Slicer-Profil, das deinen 3D-Drucker auf maximale Geschwindigkeit optimiert,
+            ohne dass die Druckqualität stark leidet. Dabei werden viele Parameter angepasst, darunter Geschwindigkeit, 
+            Beschleunigung, Kühlung, Flow, Infill, Layerhöhe und manchmal auch Pressure Advance.
+            </p>
+            <p>
+            Mit einem gut angepassten Profil kannst du Zeit sparen, ohne dass Überhänge, Ecken oder feine Details leiden.
+            Testdrucke sind hier besonders wichtig, um sicherzustellen, dass alles sauber läuft.
+            </p>
+        </div>
+
+        <!-- Karte 2: Wichtige Einheiten -->
+        <div class="card large-card">
+            <div class="icon">📏</div>
+            <h2>Wichtige Einheiten</h2>
+            <p>Beim Erstellen eines Speedprofils solltest du die folgenden Einheiten kennen:</p>
+            <ul>
+            <li><strong>Geschwindigkeit:</strong> mm/s: wie schnell sich der Druckkopf bewegt</li>
+            <li><strong>Beschleunigung:</strong> mm/s²: wie schnell der Druckkopf die Geschwindigkeit ändern kann</li>
+            <li><strong>Flow / Volumetrische Geschwindigkeit:</strong> mm³/s: wie viel Filament pro Sekunde extrudiert wird</li>
+            <li><strong>Temperatur:</strong> °C: Düsentemperatur und Heizbett</li>
+            <li><strong>Layerhöhe:</strong> mm: Dicke jeder Schicht, beeinflusst Geschwindigkeit und Detail</li>
+            </ul>
+            <p>Wer diese Werte versteht, kann gezielt optimieren und sieht sofort, welche Änderungen sinnvoll sind.</p>
+        </div>
+
+        <div class="card large-card">
+            <div class="icon">⏱️</div>
+            <h2>Warum High-Speed-Profile sinnvoll sind</h2>
+            <p>
+            Mit einem gut angepassten High-Speed-Profil sparst du massiv Zeit, besonders bei großen oder wiederholten Drucken.
+            Es hilft dir, die Balance zwischen Geschwindigkeit und Druckqualität zu finden. 
+            </p>
+            <p>
+            Außerdem lernst du dabei, wie verschiedene Parameter zusammenwirken, z.B. dass höhere Geschwindigkeit oft stärkere Kühlung oder angepassten Flow benötigt.
+            Das Wissen kannst du auf zukünftige Drucke übertragen.
+            </p>
+        </div>
+
+      <div class="card large-card">
+        <div class="icon">⚡</div>
+        <h2>Geschwindigkeit & Beschleunigung</h2>
+        <p>
+          Die Geschwindigkeit ist das Herz eines High-Speed-Profils. Aber aufgepasst: nur schnell drucken hilft nicht, die Beschleunigung muss stimmen. 
+          Bei einem CoreXY wie dem Creality K1 oder Bambulab-Modellen solltest du für Außenwände und Füllung unterschiedliche Werte einstellen.
+        </p>
+        <ul>
+          <li>Außenwände: etwas langsamer, für saubere Oberflächen</li>
+          <li>Innenwände/Füllung: volle Geschwindigkeit</li>
+          <li>Erste Schicht: langsamer, damit die Haftung stimmt</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">🧊</div>
+        <h2>Kühlung & Lüfter</h2>
+        <p>
+          Kühlung ist bei High-Speed-Drucken entscheidend. Ohne ausreichend Lüftung kühlen kleine Ecken nicht aus, Schichten wellen sich oder sacken ab.
+        </p>
+        <ul>
+          <li>Side- und Modelfan auf 100%</li>
+          <li>Intelligente Kühlzonen aktivieren → nur bei kleinen Layer kurz langsamer werden</li>
+          <li>Erste Schicht: kein Lüfter</li>
+          
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">💨</div>
+        <h2>Filament & Temperatur</h2>
+        <p>
+          Die richtige Temperatur verhindert Tröpfchen und unsauberen Fluss. Hochgeschwindigkeitsdruck erfordert manchmal etwas niedrigere Temperaturen, um Blobs zu vermeiden.
+        </p>
+        <ul>
+          <li>PLA: 220-230°C</li>
+          <li>Bed: 50°C</li>
+          <li>Maximale Volumetrische Geschwindigkeit begrenzen → z.B. 25mm³/s je nach Extruder</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">🧩</div>
+        <h2>Infill & Außenwände</h2>
+        <p>
+          Ein guter Kompromiss aus Stabilität und Geschwindigkeit: weniger Dichte im Infill, 2 Wände, obere und untere Schalen nicht zu dick. 
+          Monotonische Linien oder Gitternetz funktionieren gut.
+        </p>
+        <ul>
+          <li>2 Wände außen</li>
+          <li>Obere und untere Schalen 3 Schichten</li>
+          <li>Infill 5-25%</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">🎯</div>
+        <h2>Pressure Advance</h2>
+        <p>
+          Pressure Advance gleicht Verzögerungen beim Materialfluss aus und verhindert Tröpfchen an Ecken oder Z-Naht.
+        </p>
+        <ul>
+          <li>Startwert: 0,04</li>
+          <li>Schrittweise testen: 0,04 → 0,05 → 0,06 → 0,07</li>
+          <li>Nur aktivieren, wenn Auto-Kalibrierung gesichert ist</li>
+          <li>Diese Einstellung bitte nur verändern wenn du dir sich sicher bist oder ein Experte bist! Ich übernehme keine Haftung für Schäden oder verlorene Inhalte.</li>
+        </ul>
+      </div>
+
+      <div class="card large-card">
+        <div class="icon">🛠️</div>
+        <h2>Tipps für Anfänger</h2>
+        <ul>
+          <li>Testdrucke in kleinen Würfeln starten</li>
+          <li>Notiere dir Änderungen, damit du sie nachvollziehen kannst</li>
+          <li>Jede Filamentart reagiert etwas anders → eigene Profile erstellen</li>
+          <li>High-Speed lohnt sich besonders bei kleinen bis mittleren Modellen</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Fertiges Profil als Karten -->
+
+    <h1>Mein optimiertes High-Speed-Profil für den Creality K1</h1>
+    <h3>Hier siehst du, welche Werte ich angepasst haben, um maximale Geschwindigkeit mit guter Qualität zu erreichen.</h3>
+
+    <section class="grid large-cards-grid">
+    <div class="card large-card">
+        <div class="icon">🎚️</div>
+        <h3>Anfang</h3>
+        <p><strong>Verwende ein Sstandartprofil</strong> - Dann passen alle Einstellungen und verädere nur die Wichtigsten</p>
+    </div>
+    
+    <div class="card large-card">
+        <div class="icon">🟢</div>
+        <h3>Erste Schicht Geschwindigkeit und Beschleunigung</h3>
+        <p><strong>160 mm/s | 5.000 mm/s²</strong> - Langsam für perfekte Haftung</p>
+    </div>
+
+    <div class="card large-card">
+        <div class="icon">🟢</div>
+        <h3>Außenwände und Oberflächen</h3>
+        <p><strong>400 mm/s | 12.000 mm/s²</strong> - Saubere Oberfläche, minimal reduziert</p>
+    </div>
+
+    <div class="card large-card">
+        <div class="icon">🟢</div>
+        <h3>Innenwände</h3>
+        <p><strong>550 mm/s | 18.000 mm/s²</strong> - Maximale Geschwindigkeit</p>
+    </div>
+
+    <div class="card large-card">
+        <div class="icon">🟢</div>
+        <h3>Füllung</h3>
+        <p><strong>600 mm/s | 20.000 mm/s²</strong> - Flow auf 25 mm³/s begrenzt</p>
+    </div>
+
+    <div class="card large-card">
+        <div class="icon">🌡️</div>
+        <h3>Temperatur</h3>
+        <p><strong>PLA 230°C | Bed 50°C</strong> - Gute Layerhaftung und sauberes Fließen</p>
+    </div>
+
+    <div class="card large-card">
+        <div class="icon">🧊</div>
+        <h3>Kühlung</h3>
+        <p><strong>Alle Lüfter auf 100%</strong> - Erste Schicht ohne Lüfter, danach volle Kühlung</p>
+    </div>
+
+    <div class="card large-card">
+        <div class="icon">🧼</div>
+        <h3>Kühlzonen</h3>
+        <p><strong>Aktiviere Interligente Kühlzonen</strong> - Für perfekte Außenwände</p>
+    </div>
+
+    <div class="card large-card">
+        <div class="icon">🌉</div>
+        <h3>Überhänge / Brücken</h3>
+        <p><strong>Drucke Überhänge sehr langsam z.B. 50 mm/s mit voller Kühlung</strong> - Für gute und saubere Brücken</p>
+    </div>
+
+    <div class="card large-card">
+        <div class="icon">🔹</div>
+        <h3>Z-Naht</h3>
+        <p><strong>Random</strong> - Vermeidet sichtbare Blobs an einer Ecke</p>
+    </div>
+
+    <div class="card large-card">
+        <div class="icon">💢</div>
+        <h3>Jerk</h3>
+        <p><strong>Der Jerk ist die Richtungswechselgeschwindigkeit</strong> - Mehr Jerk um so schneller und um so mehr Vibrationen entstehen</p>
+    </div>
+
+    <div class="card large-card">
+        <div class="icon">📏</div>
+        <h3>Layerhöhe</h3>
+        <p><strong>0,2 mm</strong> - Standard für meine Düse 0,4 mm</p>
+    </div>
+    </section>
+  </main>
+
+  <footer>
+    Make 3D Printing Easy
+    <br>Letztes Update 1.02.2026<br>
+    Kontakt
+    <br>E-mail: make3dprintingeasy@outlook.com<br>
+    <a class="cta" href="Impressum.html">Impressum</a>
+  </footer>
+
+</body>
+</html>
