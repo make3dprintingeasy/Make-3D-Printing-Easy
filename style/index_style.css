@@ -206,6 +206,12 @@ footer {
     font-size: 0.95rem;
   }
 
+body img{
+  height: auto;
+  width: 18.375rem;
+  display: center;
+}
+  
   .hero h1 {
     font-size: 2.1rem;
     line-height: 1.25;
@@ -237,4 +243,5 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
 
